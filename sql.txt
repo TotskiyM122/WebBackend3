@@ -1,0 +1,14 @@
+CREATE TABLE application(
+id int(10) unsigned NOT NULL AUTO_INCREMENT,
+name varchar(128) NOT NULL DEFAULT 'Name',
+email varchar(128) NOT NULL DEFAULT 'mail',
+date varchar(10) NOT NULL DEFAULT '01.01.1950',
+gender varchar(1) NOT NULL DEFAULT '-',
+limbs varchar(1) NOT NULL,
+bessm varchar(1) NOT NULL,
+passing varchar(1) NOT NULL,
+fly varchar(1) NOT NULL,
+biography varchar(256) NOT NULL DEFAULT 'absent',
+agree varchar(128) NOT NULL DEFAULT 'agree',
+PRIMARY KEY (id)
+);
