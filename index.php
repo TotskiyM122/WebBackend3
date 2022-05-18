@@ -4,7 +4,7 @@ ini_set('display_startup_errors', 0);
 error_reporting(0);
 header('Content-Type: text/html; charset=UTF-8');
 
-
+//метод запроса к странице
 if ($_SERVER['REQUEST_METHOD'] == 'GET') {
     if (!empty($_GET['save'])) {
         print('Спасибо, форма сохранена.');
@@ -106,6 +106,6 @@ catch(PDOException $e){
     print('Error : ' . $e->getMessage());
     exit();
 }
-
+//перенаправление
 header('Location: ?save=1');
 ?>
